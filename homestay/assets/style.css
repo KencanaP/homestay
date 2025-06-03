@@ -1,0 +1,34 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.home-section {
+  width: 100%;
+  height: 100vh;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.caption {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 400px;
+}
