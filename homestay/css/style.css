@@ -1,0 +1,70 @@
+body {
+  background-color: #f5eee6; /* brown-ish white */
+  color: #2d2d2d;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 24px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+a {
+  color: #a98467; /* soft brown accent */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header, .bg-primary, footer {
+  background-color: #4e342e !important; /* dark brown */
+}
+
+footer {
+  color: #fff;
+}
+
+.navbar {
+  max-width: 900px;                   /* Controls the width */
+  margin: 24px auto 0 auto;           /* Centers the navbar horizontally */
+  border-radius: 25px;                /* Rounded corners for island look */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.10); /* Soft shadow for floating effect */
+  padding: 0.5rem 2rem;               /* Padding inside the navbar */
+  background-color: #4e342e !important; /* Dark brown, overrides Bootstrap */
+  left: 0;
+  right: 0;
+}
+
+/* Responsive: Full width on small screens for usability */
+@media (max-width: 991px) {
+  .navbar {
+    max-width: 100%;
+    margin: 0;
+    border-radius: 0;
+    padding: 0.5rem 1rem;
+  }
+}
+.swiper-slide img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}

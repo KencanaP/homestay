@@ -4,130 +4,205 @@
     <meta charset="UTF-8" />
     <title>MyHomestay</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <meta
+      name="description"
+      content="Find and book cozy, affordable homestays in Malaysia with MyHomestay."
+    />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
     <!-- Swiper CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">🏡 MyHomestay</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#listing">Listing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About Us</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                >Account</a
-              >
-              <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="login.html">Login</a></li>
-                <li>
-                  <a class="dropdown-item" href="register.html">Register</a>
-                </li>
-                <li><a class="dropdown-item" href="#">My Profile</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Home Section, Swiper Carousel -->
-    <section id="home" class="home-section">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="/assets/img/placeholder.png" alt="Slide 1" />
-            <div class="caption">
-              <h5>Welcome to MyHomestay</h5>
-              <p>Find your perfect stay today!</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="/assets/img/placeholder2.jpg"
-              height="128px"
-              width="128px"
-              alt="Slide 2"
-            />
-            <div class="caption">
-              <h5>Comfort & Convenience</h5>
-              <p>Enjoy stays like never before.</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="assets/img/placeholder3.png"
-              height="128px"
-              width="128px"
-              alt="Slide 3"
-            />
-            <div class="caption">
-              <h5>Explore Malaysia</h5>
-              <p>Book homes in top destinations.</p>
-            </div>
+    <a href="#main-content" class="visually-hidden-focusable"
+      >Skip to main content</a
+    >
+    <header>
+      <!-- Navbar (island style, sticky) -->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top"
+        role="navigation"
+        aria-label="Main navigation"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">🏡 MyHomestay</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#listing">Listing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Account</a
+                >
+                <ul
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="login.html">Login</a></li>
+                  <li>
+                    <a class="dropdown-item" href="register.html">Register</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">My Profile</a></li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
+      </nav>
+    </header>
+    <main id="main-content">
+      <!-- Home Section, Swiper Carousel -->
+      <section id="home" class="home-section">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="/assets/img/hs1.jpg"
+                alt="Welcome to MyHomestay - Malaysia Homestay"
+                class="img-fluid"
+              />
+              <div class="caption">
+                <h5>Welcome to MyHomestay</h5>
+                <p>Find your perfect stay today!</p>
+                <a href="#listing" class="btn btn-primary mt-2">Book Now</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/assets/img/hs2.jpg"
+                alt="Comfortable homestay living room"
+                class="img-fluid"
+              />
+              <div class="caption">
+                <h5>Comfort & Convenience</h5>
+                <p>Enjoy stays like never before.</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/assets/img/hs3.jpg"
+                alt="Explore Malaysia vacation destinations"
+                class="img-fluid"
+              />
+              <div class="caption">
+                <h5>Explore Malaysia</h5>
+                <p>Book homes in top destinations.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Swiper controls -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
 
-        <!-- Swiper controls -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
+      <!-- Listing Section -->
+      <section id="listing" class="py-5">
+        <div class="container">
+          <h2 class="mb-4">Available Homestays</h2>
+          <div class="row g-4">
+            <!-- Example Card 2 -->
+            <div class="col-md-4">
+              <div class="card h-100 position-relative" tabindex="0">
+                <img
+                  src="./assets/img/homestay2.jpg"
+                  class="card-img-top img-fluid"
+                  alt="Beachside Homestay in Penang"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Penang Beachside Homestay</h5>
+                  <p class="card-text">
+                    4 guests · 2 bedrooms · Sea view · Breakfast included
+                  </p>
+                  <a href="#" class="btn btn-outline-primary">View Details</a>
+                </div>
+                <div class="details">
+                  <div>
+                    <strong>More Info:</strong><br />
+                    Spacious suite, mountain view, free WiFi.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Example Card 3 -->
+            <div class="col-md-4">
+              <div class="card h-100 position-relative" tabindex="0">
+                <img
+                  src="./assets/img/homestay3.jpg"
+                  class="card-img-top img-fluid"
+                  alt="Nature Retreat in Cameron Highlands"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Cameron Highlands Nature Retreat</h5>
+                  <p class="card-text">
+                    6 guests · 3 bedrooms · Mountain view · BBQ facilities
+                  </p>
+                  <a href="#" class="btn btn-outline-primary">View Details</a>
+                </div>
+                <div class="details">
+                  <div>
+                    <strong>More Info:</strong><br />
+                    Nature retreat, BBQ facilities, mountain view.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <!-- Other Sections -->
-    <section id="listing" class="py-5">
-      <div class="container">
-        <h2 class="mb-4">Available Homestays</h2>
-        <!-- Listing cards -->
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="container">
-        <h2 class="mb-4">About MyHomestay</h2>
-        <p>
-          MyHomestay connects travelers with cozy, affordable homestays in
-          Malaysia.
-        </p>
-      </div>
-    </section>
-
+      <!-- About Section -->
+      <section id="about" class="py-5 bg-light">
+        <div class="container">
+          <h2 class="mb-4">About MyHomestay</h2>
+          <p>
+            MyHomestay connects travelers with cozy, affordable homestays in
+            Malaysia. Whether you're looking for a city escape, a beach holiday,
+            or a nature retreat, we help you find the perfect place to stay.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-primary text-white py-4 text-center mt-5">
+      &copy; 2025 MyHomestay. All rights reserved.
+    </footer>
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/swiper-init.js"></script>
+    <script src="js/swiper-init.js" defer></script>
   </body>
 </html>
