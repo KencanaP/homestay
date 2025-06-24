@@ -155,6 +155,13 @@ html {
 .mySlides {
   display: none;
 }
+.mySlides img,
+.card img {
+  width: 100%;
+  height: 600px;       /* Set to your desired height */
+  object-fit: scale-down;   /* This crops and centers the image */
+  display: block;
+}
 
 .prev, .next {
   cursor: pointer;
@@ -354,4 +361,104 @@ input:checked + label .description {
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+/* ===== MOBILE MODE CSS ===== */
+@media (max-width: 600px) {
+  /* Header & Navigation */
+  .header, .header-right, nav.header-right {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 10px !important;
+    gap: 0 !important;
+    width: 100% !important;
+  }
+  .header a, .dropdown .dropdown-btn {
+    display: block !important;
+    width: 100% !important;
+    text-align: left !important;
+    margin: 2px 0 !important;
+    font-size: 16px !important;
+    box-sizing: border-box !important;
+  }
+  .dropdown-content {
+    position: static !important;
+    min-width: 100% !important;
+    box-shadow: none !important;
+  }
+
+  /* Slideshow */
+  .slideshow-container {
+    max-width: 100% !important;
+    padding-top: 5px !important;
+  }
+  .mySlides img {
+    width: 100vw !important;
+    height: 180px !important;
+    object-fit: cover !important;
+  }
+  .prev, .next {
+    padding: 8px !important;
+    font-size: 16px !important;
+  }
+
+  /* About Section */
+  .about .wrapper {
+    padding: 30px 5px !important;
+  }
+  .about h2 {
+    font-size: 22px !important;
+    padding-right: 0 !important;
+  }
+  .about p {
+    font-size: 15px !important;
+  }
+
+  /* Card Section */
+  .wrapper, .container {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    padding: 10px 0 !important;
+    max-width: 98vw !important;
+    min-height: unset !important;
+    height: auto !important;
+  }
+  .card {
+    width: 100% !important;
+    margin: 10px 0 !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+  .card > .row > .description {
+    width: 100% !important;
+    font-size: 14px !important;
+    padding: 0 8px !important;
+  }
+  input:checked + label {
+    width: 100% !important;
+  }
+
+  /* Footer */
+  .footer-content {
+    padding: 10px !important;
+    font-size: 14px !important;
+  }
+  .footer {
+    margin-top: 20px !important;
+    padding: 15px 5px !important;
+    font-size: 14px !important;
+  }
+
+  /* Scroll to Top Button */
+  #topBtn {
+    padding: 12px !important;
+    right: 15px !important;
+    bottom: 15px !important;
+    font-size: 16px !important;
+  }
+
+  /* General touch targets */
+  button, .dropdown-btn, .header a {
+    min-height: 44px !important;
+  }
 }
