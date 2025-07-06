@@ -1,14 +1,16 @@
 <?php
-$servername = "localhost";
-$username = "root"; // Change if your MySQL user is different
-$password = "";     // Change if your MySQL password is set
-$dbname = "homestay";
+$host = "localhost";
+$username = "root";
+$password = "";
+$database = "homestay";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$con = mysqli_connect($host, $username, $password, $database);
 
 // Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+if (!$con) {
+    die("Connection failed: " . mysqli_connect_error());
 }
-?>
+
+// Optional: Set character set
+mysqli_set_charset($con, "utf8");
